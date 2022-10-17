@@ -1,8 +1,8 @@
 #include <stdio.h>
+#include <math.h>
 
 int main() {
-    double przychod,kosztaUzyskania, dochod;//skladaZUS,dochodPoOd1ZUS,skladkaZdrow,
-    //zaliczkaPodatek,podatekNalezny,podatekNaleznyZaokr,podatekDoZaplaty,nadplata;
+    double przychod,kosztaUzyskania, dochod, skladkaZUS,dochodPoOd1ZUS,skladkaZdrow,zaliczkaPodatek,podatekNalezny,podatekNaleznyZaokr,podatekDoZaplaty,nadplata,podatekMinusSkladZdrow;
     printf("Podaj przychod\n"); //a
     scanf("%lf", &przychod);
 
@@ -10,22 +10,43 @@ int main() {
     scanf("%lf", &kosztaUzyskania);
 
     dochod=przychod-kosztaUzyskania; //c
-    printf("Dochod wynosi:\n %lf", dochod);
+    printf("Dochod wynosi: %lf\n", dochod);
 
     printf("Podaj koszta ubezpieczenia spolecznego ZUS\n"); //d
-    scanf("%lf", &skladaZUS);
+    scanf("%lf", &skladkaZUS);
 
     printf("Dochod po odliczeniu skladki ZUS\n"); //e
-    dochodPoOd1ZUS=dochod-skladaZUS;
+    dochodPoOd1ZUS=dochod-skladkaZUS;
     printf("Dochod wynosi:\n %lf", dochodPoOd1ZUS);
-
+    
+    printf("Podaj wartosc skladki zdrowotnej: \n"); //f
+    scanf("%lf", &skladkaZdrow);
+    
+    if(przychod <= 85528)
+    podatekNalezny=przychod*0.18-556.02;
+    else
+    podatekNalezny=13839.02+(przychod-85528)*0.32; //g
+    printf("Podatek wynosi: %lf\n", podatekNalezny);
+    
+    podatekMinusSkladZdrow=podatekNalezny-skladkaZdrow;
+    printf("Podatek po odliczeniu skladki zdrowotnej wynosi: %lf\n", podatekMinusSkladZdrow); //h
+    
+    printf("Podaj wplacona zaliczke na podatek dochodowy: \n");
+    scanf("%lf", &zaliczkaPodatek);
+    
+    podatekNalezny=podatekMinusSkladZdrow+zaliczkaPodatek;
+    
+    printf("Podatek nalezny wynosi: \n");
+    printf("%lf", podatekNalezny);
+    
+    podatekNaleznyZaokr=ceil(podatekNalezny);
+    
+    
+    
+    
     
 
-
-
-
-
-
+    
 
 
     return 0;
