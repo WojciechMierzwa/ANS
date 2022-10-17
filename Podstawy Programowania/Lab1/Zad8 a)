@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main() {
+    int liczbaM, liczbaC;
+    printf(" Podaj ilosc metrow == ");
+    scanf("%d", &liczbaM);
+    printf(" Podaj ilosc centrymetrow == ");
+    scanf("%d", &liczbaC);
+    printf(" Calkowita ilosc milimetrow == %d\n", liczbaM*1000 + liczbaC*10);
+    return 0;
+}
