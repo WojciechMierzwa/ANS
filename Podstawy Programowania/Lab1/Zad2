@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main() {
+    printf("+---------------------------------+\n");
+    printf("|                                 |\n");
+    printf("|         Wojciech Mierzwa        |\n");
+    printf("|           Przezmark 35H         |\n");
+    printf("|         Przezmark 82-310        |\n");
+    printf("|                                 |\n");
+    printf("+---------------------------------+\n");
+    return 0;
+}
