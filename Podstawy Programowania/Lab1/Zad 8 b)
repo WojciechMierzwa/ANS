@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main() {
+    int numberY, numberFeet, numberInch;
+    printf(" Podaj ilosc yardow == ");
+    scanf("%d", &numberY);
+    printf(" Podaj ilosc stop == ");
+    scanf("%d", &numberFeet);
+    printf(" Podaj ilosc cali == ");
+    scanf("%d", &numberInch);
+    printf(" Calkowita ilosc dlugosc wyrazona w calach wynosi: %d\n",
+     numberY*36 + numberFeet*12 + numberInch);
+    return 0;
+}
