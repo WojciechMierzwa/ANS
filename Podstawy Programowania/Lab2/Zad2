@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int main() {
+    double przychod,kosztaUzyskania, dochod;//skladaZUS,dochodPoOd1ZUS,skladkaZdrow,
+    //zaliczkaPodatek,podatekNalezny,podatekNaleznyZaokr,podatekDoZaplaty,nadplata;
+    printf("Podaj przychod\n"); //a
+    scanf("%lf", &przychod);
+
+    printf("Podaj koszta uzyskania\n"); //b
+    scanf("%lf", &kosztaUzyskania);
+
+    dochod=przychod-kosztaUzyskania; //c
+    printf("Dochod wynosi:\n %lf", dochod);
+
+    printf("Podaj koszta ubezpieczenia spolecznego ZUS\n"); //d
+    scanf("%lf", &skladaZUS);
+
+    printf("Dochod po odliczeniu skladki ZUS\n"); //e
+    dochodPoOd1ZUS=dochod-skladaZUS;
+    printf("Dochod wynosi:\n %lf", dochodPoOd1ZUS);
+
+    
+
+
+
+
+
+
+
+
+    return 0;
+}
