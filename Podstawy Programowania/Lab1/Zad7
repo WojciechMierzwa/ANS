@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main() {
+    double a,b;
+    printf(" a == ");
+    scanf("%lf", &a);
+    printf(" b == ");
+    scanf("%lf", &b);
+    printf(" a+b == %lf\n", a+b);
+    printf(" a-b == %lf\n", a-b);
+    printf(" a*b == %lf\n", a*b);
+    printf(" a/b == %lf\n", a/b);
+    return 0;
+}
