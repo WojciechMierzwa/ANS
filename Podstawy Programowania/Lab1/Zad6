@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main() {
+    int x,y;
+    double w;
+    scanf("%d", &x);
+    scanf("%d", &y);
+    w=(x*x+x/y+x*x*x*x*x)/(x/(x+y)+y*y*y);;
+    printf(" w == %f\n", w);
+
+    return 0;
+}
