@@ -1,0 +1,39 @@
+#include <stdio.h>
+
+int n;
+int number;
+
+int main() {
+    printf("Podaj ilosc liczb:\n");
+    scanf("%d", &n);
+    
+    int sump=0;
+	int sumn=0;
+	int counter0=0;
+	int counter=0;
+
+    while(counter<n)
+    {
+    	printf("Podaj liczbe:\n");
+    	scanf("%d", &number);
+    	
+    	if(number>0)
+    	{
+    		sump=sump+number;
+		}
+		if(number<0)
+		{
+			sumn=sumn+number;
+		}
+		if(number==0)
+		{
+			counter0++;
+		}
+		counter++;
+	}
+	printf("Suma liczb dodatnich: %d\n", sump);
+	printf("Suma liczb ujemnych : %d\n", sumn);
+	printf("Tyle razy pojawilo sie zero: %d\n", counter0);
+
+    return 0;
+}
