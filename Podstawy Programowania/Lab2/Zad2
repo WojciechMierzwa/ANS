@@ -25,7 +25,7 @@ int main() {
     if(przychod <= 85528)
     podatekNalezny=przychod*0.18-556.02;
     else
-    podatekNalezny=13839.02+(przychod-85528)*0.32; //g
+    podatekNalezny=14839.02+(przychod-85528)*0.32; //g
     printf("Podatek wynosi: %lf\n", podatekNalezny);
     
     podatekMinusSkladZdrow=podatekNalezny-skladkaZdrow;
@@ -34,12 +34,28 @@ int main() {
     printf("Podaj wplacona zaliczke na podatek dochodowy: \n");
     scanf("%lf", &zaliczkaPodatek);
     
-    podatekNalezny=podatekMinusSkladZdrow+zaliczkaPodatek;
+    podatekNalezny=podatekMinusSkladZdrow-zaliczkaPodatek;
     
+    if(podatekNalezny>=0)
+    {
     printf("Podatek nalezny wynosi: \n");
     printf("%lf", podatekNalezny);
     
     podatekNaleznyZaokr=ceil(podatekNalezny);
+    printf("Podatek nalezny zaokrokralony wynosi:\n");
+    printf("%lf", podatekNaleznyZaokr);
+	}
+	if(podatekNalezny<0)
+    {
+    podatekNalezny=-podatekNalezny;
+    printf("Zwrot podatku wynosi: \n");
+    printf("%lf", podatekNalezny);
+    
+    podatekNaleznyZaokr=ceil(podatekNalezny);
+    printf("Zwrot podatku zaokroglany wynosi:\n");
+    printf("%lf", podatekNaleznyZaokr);
+	}
+    
     
     
     
