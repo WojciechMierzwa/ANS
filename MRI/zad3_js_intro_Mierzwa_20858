@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+    <meta charset="utf-8">
+    <title>Chciałem Być - Krzysztof Krawczyk</title>
+    <style>
+        img {
+            width: 50%;
+            border-radius: 75%;
+            opacity: 0.8;
+        }
+        body {
+            background-color: #f7d977;
+        }
+     
+    </style>
+    <script>
+        const genElement = (array) =>
+            `<div style="
+
+                          background-color: #d99a18;
+                          color: white;
+                          border-radius: 12px;
+                          padding: 10px;
+                          border: 8px double #a57319;
+                          width: 35%;
+                          margin: 40px auto 35px auto;
+                          text-align: center;
+                          font-family: oblique;
+                          font-size: 18px;">
+
+                        <img src="krawczyk.jpg" title="krawczyk">
+                        <h1 style="font-family: oblique; text-shadow: 3px 3px 3px #a57319;">Chciałem Być - Krzysztof Krawczyk</h1>
+                        <p style="text-shadow: 3px 3px 3px #a57319;">${array[0]}</p>
+                        <p style="text-shadow: 3px 3px 3px #a57319;">${array[1]}</p>
+                        <p style="text-shadow: 3px 3px 3px #a57319;">${array[2]}</p>
+                        <p style="text-shadow: 3px 3px 3px #a57319;">${array[3]}</p>
+                        <p style="text-shadow: 3px 3px 3px #a57319;">${array[4]}</p>
+                        <p style="text-shadow: 3px 3px 3px #a57319;">${array[5]}</p>
+                        <p style="text-shadow: 3px 3px 3px #a57319;">${array[6]}</p>
+                        <p style="text-shadow: 3px 3px 3px #a57319;">${array[7]}</p>
+                        <p style="text-shadow: 3px 3px 3px #a57319;">${array[8]}</p>
+                        <p style="text-shadow: 3px 3px 3px #a57319;">${array[9]}</p>
+                        <p style="text-shadow: 3px 3px 3px #a57319;">${array[10]}</p>
+                        <p style="text-shadow: 3px 3px 3px #a57319;">${array[11]}</p>
+
+                </div>`;
+        const wiersz =
+            ['Chciałem być marynarzem,',
+                'Chciałem mieć tatuaże',
+                'Podróżować zwiedzać świat',
+                'Pięknie żyć garściami życie brać',
+                'Chciałem być piosenkarzem',
+                'Chciałem mieć pełne sale',
+                'Podróżować zwiedzać świat',
+                'I wiele pięknych pięknych kobiet znać',
+                'Przemierzyłem cały świat od Las Vegas po Krym',
+                'Zgrałem tysiąc talii kart które lubią dym',
+                'Skasowałem kilka bryk nie żałuję dziś',
+                'Nie żałuję dziś'];
+
+        const print =
+            () => document.getElementById('wiersz').innerHTML = genElement(wiersz);
+    </script>
+</head>
+<body>
+    <div id="wiersz"></div>
+    <script>
+        print();
+    </script>
+</body>
+</html>
