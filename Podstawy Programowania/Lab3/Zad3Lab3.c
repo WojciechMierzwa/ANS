@@ -1,13 +1,13 @@
 #include <stdio.h>
 #include <math.h>
+#include <complex.h>
 
 
 
 int main()
 {
 	
-	double a,b,c,x1,x2,delta;
-	double imdelta, rootimdelta,realpart,impart1,impart2;
+	double a,b,c,x1,x2,delta, imdelta, realpart, impart1, impart2, rootimdelta;
 	int check=0;
 	int flag=1;
     
@@ -106,19 +106,46 @@ int main()
 	
 	if(delta<0)
 	{
-		imdelta=abs(delta);
-		rootimdelta=sqrt(imdelta);
-		realpart=-b/(2*a);
-		impart1=rootimdelta/(2*a);
-		impart2=-impart1;
-		printf("Pierwiastek x1 wynosi x1=%lf", realpart);
+/*	double complex z1=;
+	double complex z2;
+	
+    printf("z1 = %.1f%+.1fi\n", creal(z1), cimag(z1));
+	
+	printf("Rownanie kwadratowe ma 2 rozwiazania z zbiorze liczb urojonych z1 = %.1f%+.1fi\n", creal(z1), cimag(z1));
+	printf(" z2 = %.1f%+.1fi\n", creal(z2), cimag(z2));
+	
+	printf("Rownanie dla rowiazania z1 rowna sie=%lf\n", a*z1*z1+b*z1+c);
+	printf("Rownanie dla rowiazania z2 rowna sie=%lf\n", a*z2*z2+b*z2+c);*/
+	
+	imdelta=abs(delta);
+	rootimdelta=sqrt(imdelta);
+	realpart=-b/(2*a);
+	impart1=rootimdelta/(2*a);
+	impart2=-impart1;
+	
+	double complex z1=realpart+impart1*I;
+	double complex z2=realpart+impart2*I;
+	
+	printf("Rownanie kwadratowe ma 2 rozwiazania z zbiorze liczb urojonych z1 = %f%+fi", creal(z1), cimag(z1));
+	printf(" i z2 = %f%+fi\n", creal(z2), cimag(z2));
+	printf("Rownanie dla rowiazania z1 rowna sie=%lf\n", a*z1*z1+b*z1+c);
+	printf("Rownanie dla rowiazania z2 rowna sie=%lf\n", a*z2*z2+b*z2+c);
+	printf("Wartosc rzeczywista obu pierwiastkow wynosi =%lf\n", realpart);
+	printf("Wartosc urojona dla pierwiastka z1 =%lf\n", impart1);
+	printf("Wartosc urojona dla pierwiastka z2 =%lf\n", impart2);
+
+	
+	
+	
+	/*printf("Pierwiastek x1 wynosi x1=%lf", realpart);
 		printf(" + %lf", impart1);
 		printf("j\n");
 		
 		printf("Pierwiastek x1 wynosi x2=%lf", realpart);
 		printf(" + %lf", impart2);
 		printf("j\n");
-		
+	
+		*/
 		
 	}
    
