@@ -69,7 +69,7 @@ int main()
 	if(a==0 & check==0)
 	{
 		printf("Rownanie liniowe\n");
-		x1=c/b;
+		x1=-c/b;
 		printf("Rozwiazanie wynosi: %lf", x1);
 	}
 	if(a!=0)
