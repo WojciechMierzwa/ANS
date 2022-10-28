@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Walidacja pól formularza za pomocą JavaScript</title>
+	<meta charset="utf-8">
+	<script src="skrypty.js" type="text/javascript"></script>
+</head>
+<body>
+<header>
+	<h1>Przykład walidacji pól formularza za pomocą JavaScript.</h1>
+</header>
+<section>
+	<h2>Obejrzyj funkcję sprawdz() (plik skrypty.js) napisaną w JavaScript.</h2>
+  <form method="post" action="jakas_akcja.php" name="formularz"> 
+    <input type="hidden" name="insert" value="true">
+   	<table> 
+	  <tr>
+  	    <th>Imię</th>
+		<th>Nazwisko</th>
+		<th>Waga</th>
+		<th>Akcja</th>
+ 	  </tr>
+	  <tr>
+	    <td><input type="text" name="imie"></td>
+		<td><input type="text" name="nazwisko"></td>
+		<td><input type="text" name="waga"></td>
+		<td><input type="submit" value="Dodaj" onclick="return sprawdz();"></td>
+	  </tr>
+	</table>
+  </form>
+
+</section>
+
+</body>
+</html> 
