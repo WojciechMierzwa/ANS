@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Wojciech Mierzwa 20858</title>
+    <script>
+        function logicCalc(x1, x2, x3, x4) {
+
+    let x1x2 = (x1 || x2);
+    let y1 = !(x1x2 & x3);
+    let y2 = !(y1 || (!x4))
+    alert(y1);
+    alert(y2);
+    return [y1, y2];
+
+  }
+
+    </script>
+</head>
+<body>
+    <header>Laboratorium z Przedmiotu MRI - "Funkcje Logiczne"<br>Wykonał: Wojciech Mierzwa 20858</header>
+    
+    <div style="overflow-x: auto;">
+        <table>
+            <tr>
+            <th>x1</th>
+            <th>x2</th>
+            <th>x3</th>
+            <th>x4</th>
+            <th>y1</th>
+            <th>y2</th>
+            </tr>
+            <tr><!--0-->
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>1</td>
+            <td>0</td>
+            
+            </tr>
+            <tr><!--1-->
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+                <td>1</td>
+                <td>0</td>
+                
+            </tr>
+            <tr><!--2-->
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                
+            </tr>
+            <tr><!--3-->
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>0</td>
+                
+            </tr>
+            <tr><!--4-->
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                
+            </tr>
+            <tr><!--5-->
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                
+            </tr>
+            <tr><!--6-->
+                <td>0</td>
+                <td>1</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                
+            </tr>
+            <tr><!--7-->
+                <td>0</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                
+            </tr>
+            <tr><!--8-->
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                
+            </tr>
+            <tr><!--9-->
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+                <td>1</td>
+                <td>0</td>
+                
+            </tr>
+            <tr><!--10-->
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                
+            </tr>
+            <tr><!--11-->
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>0</td>
+                
+            </tr>
+            <tr><!--12-->
+                <td>1</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                
+            </tr>
+            <tr><!--13-->
+                <td>1</td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+                
+            </tr>
+            <tr><!--14-->
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+                
+            </tr>
+            <tr><!--15-->
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+                
+            </tr>
+        </div>
+      </table>
+
+      <img src="logic_diagram.png" alt="logic_diagram">
+
+      <p>x1:</p>
+        <input type="radio" id="x1_0" name="x1" value="x1">
+        <label for="0">0</label>
+        <input type="radio" id="x1_1" name="x1" value="x1">
+        <label for="1">1</label>
+      <p>x2:</p>
+        <input type="radio" id="x1_0" name="x2" value="x1">
+        <label for="0">0</label>
+        <input type="radio" id="x1_1" name="x2" value="x1">
+        <label for="1">1</label>
+      <p>x3:</p>
+        <input type="radio" id="x1_0" name="x3" value="x1">
+        <label for="0">0</label>
+        <input type="radio" id="x1_1" name="x3" value="x1">
+        <label for="1">1</label>
+      <p>x4:</p>
+        <input type="radio" id="x1_0" name="x4" value="x1">
+        <label for="0">0</label>
+        <input type="radio" id="x1_1" name="x4" value="x1">
+        <label for="1">1</label>
+
+    <button onclick="logicCalc(document.getElementById('x1').value,document.getElementById('x2').value,
+    document.getElementById(x3).value,document.getElementById('x4').value)">Add</button>
+
+</body>
+</html>
