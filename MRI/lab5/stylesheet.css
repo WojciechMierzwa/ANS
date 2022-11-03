@@ -36,3 +36,18 @@ table {
     margin-right: auto;
     width: 90%;
   }
+  .placer {
+    margin-left: 90px;
+    margin-right: auto;
+    color: #8a0404;
+  }
+  .button {
+    background-color: #8a0404;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }

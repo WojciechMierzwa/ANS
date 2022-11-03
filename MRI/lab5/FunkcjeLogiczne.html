@@ -6,19 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheet.css">
     <title>Wojciech Mierzwa 20858</title>
-    <script>
-        function logicCalc(x1, x2, x3, x4) {
-
-    let x1x2 = (x1 || x2);
-    let y1 = !(x1x2 & x3);
-    let y2 = !(y1 || (!x4))
-    alert(y1);
-    alert(y2);
-    return [y1, y2];
-
-  }
-
-    </script>
+    <script src="s.js"></script>
+    
 </head>
 <body>
     <header>Laboratorium z Przedmiotu MRI - "Funkcje Logiczne"<br>Wykonał: Wojciech Mierzwa 20858</header>
@@ -180,31 +169,51 @@
         </div>
       </table>
 
-      <img src="logic_diagram.png" alt="logic_diagram">
-
+    <img src="logic_diagram.png" alt="logic_diagram">
+<!---
       <p>x1:</p>
-        <input type="radio" id="x1_0" name="x1" value="x1">
+        <input type="radio" id="x1" name="x1" value="x1">
         <label for="0">0</label>
-        <input type="radio" id="x1_1" name="x1" value="x1">
+        <input type="radio" id="x1" name="x1" value="x1">
         <label for="1">1</label>
       <p>x2:</p>
-        <input type="radio" id="x1_0" name="x2" value="x1">
+        <input type="radio" id="x2" name="x2" value="x2">
         <label for="0">0</label>
-        <input type="radio" id="x1_1" name="x2" value="x1">
+        <input type="radio" id="x2" name="x2" value="x2">
         <label for="1">1</label>
       <p>x3:</p>
-        <input type="radio" id="x1_0" name="x3" value="x1">
+        <input type="radio" id="x3" name="x3" value="x3">
         <label for="0">0</label>
-        <input type="radio" id="x1_1" name="x3" value="x1">
+        <input type="radio" id="x3" name="x3" value="x3">
         <label for="1">1</label>
       <p>x4:</p>
-        <input type="radio" id="x1_0" name="x4" value="x1">
+        <input type="radio" id="x4" name="x4" value="x4">
         <label for="0">0</label>
-        <input type="radio" id="x1_1" name="x4" value="x1">
+        <input type="radio" id="x4" name="x4" value="x4">
+        <label for="1">1</label>-->
+
+      
+     <!-- <p>x3:</p>
+        <input type="radio" name="x3" value="false">
+        <label for="0">0</label>
+        <input type="radio" name="x3" value="true">
         <label for="1">1</label>
+      <p>x4:</p>
+        <input type="radio" name="x4" value="false">
+        <label for="0">0</label>
+        <input type="radio" name="x4" value="true">
+        <label for="1">1</label>-->
 
-    <button onclick="logicCalc(document.getElementById('x1').value,document.getElementById('x2').value,
+    <!--<button onclick="logicCalc(document.getElementById('x1').value,document.getElementById('x2').value,
     document.getElementById(x3).value,document.getElementById('x4').value)">Add</button>
+    -->
+<div class="placer">
+    <h1>Podaj wartości</h1>
 
+  x1: <input type="number" name="a" id="a" value="0"><br> x2: <input type="number" name="b" id="b" value="0"><br>
+  x3: <input type="number" name="c" id="c" value="0"><br> x4: <input type="number" name="d" id="d" value="0"><br><br>
+  <button class="button" onclick="logic(document.getElementById('a').value,document.getElementById('b').value,document.getElementById('c').value,document.getElementById('d').value)">Dodaj</button>
+</div>
+   
 </body>
 </html>
