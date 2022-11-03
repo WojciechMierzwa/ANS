@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheet.css">
     <title>Wojciech Mierzwa 20858</title>
-    <script src="s.js"></script>
+    <script src="s.js">
+        document.getElementById("Y1").innerHTML=y1;
+        document.getElementById("Y2").innerHTML=y2;
+    </script>
     
 </head>
 <body>
@@ -170,43 +173,7 @@
       </table>
 
     <img src="logic_diagram.png" alt="logic_diagram">
-<!---
-      <p>x1:</p>
-        <input type="radio" id="x1" name="x1" value="x1">
-        <label for="0">0</label>
-        <input type="radio" id="x1" name="x1" value="x1">
-        <label for="1">1</label>
-      <p>x2:</p>
-        <input type="radio" id="x2" name="x2" value="x2">
-        <label for="0">0</label>
-        <input type="radio" id="x2" name="x2" value="x2">
-        <label for="1">1</label>
-      <p>x3:</p>
-        <input type="radio" id="x3" name="x3" value="x3">
-        <label for="0">0</label>
-        <input type="radio" id="x3" name="x3" value="x3">
-        <label for="1">1</label>
-      <p>x4:</p>
-        <input type="radio" id="x4" name="x4" value="x4">
-        <label for="0">0</label>
-        <input type="radio" id="x4" name="x4" value="x4">
-        <label for="1">1</label>-->
 
-      
-     <!-- <p>x3:</p>
-        <input type="radio" name="x3" value="false">
-        <label for="0">0</label>
-        <input type="radio" name="x3" value="true">
-        <label for="1">1</label>
-      <p>x4:</p>
-        <input type="radio" name="x4" value="false">
-        <label for="0">0</label>
-        <input type="radio" name="x4" value="true">
-        <label for="1">1</label>-->
-
-    <!--<button onclick="logicCalc(document.getElementById('x1').value,document.getElementById('x2').value,
-    document.getElementById(x3).value,document.getElementById('x4').value)">Add</button>
-    -->
 <div class="placer">
     <h1>Podaj wartości</h1>
 
@@ -214,6 +181,8 @@
   x3: <input type="number" name="c" id="c" value="0"><br> x4: <input type="number" name="d" id="d" value="0"><br><br>
   <button class="button" onclick="logic(document.getElementById('a').value,document.getElementById('b').value,document.getElementById('c').value,document.getElementById('d').value)">Dodaj</button>
 </div>
+<span id="Y1"></span>
+<span id="Y2"></span>
    
 </body>
 </html>
