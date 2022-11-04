@@ -172,17 +172,20 @@
             </tr>
         </div>
       </table>
-
-    <img src="logic_diagram.png" alt="logic_diagram">
+      <br>
+    <button class="button" onclick="logic(document.getElementById('a').value,document.getElementById('b').value,document.getElementById('c').value,document.getElementById('d').value)">Dodaj</button>
+    <div class="area">
+    <div class="x1">x1: <input type="number" name="a" id="a" value="0"></div>  
+    <div class="x2">x2: <input type="number" name="b" id="b" value="0"></div>
+    <div class="x3">x3: <input type="number" name="c" id="c" value="0"></div>
+    <div class="x4">x4: <input type="number" name="d" id="d" value="0"></div>
+    </div>
+    <img src="graph.png" alt="logic_diagram">
 
 <div class="placer">
-    <h1>Podaj wartości</h1>
-
-  x1: <input type="number" name="a" id="a" value="0"><br> x2: <input type="number" name="b" id="b" value="0"><br>
-  x3: <input type="number" name="c" id="c" value="0"><br> x4: <input type="number" name="d" id="d" value="0"><br><br>
-  <button class="button" onclick="logic(document.getElementById('a').value,document.getElementById('b').value,document.getElementById('c').value,document.getElementById('d').value)">Dodaj</button>
-  <p>y1:</p><span id="Y1"> </span>
-  <p>y2:</p><span id="Y2"></span>
+   <div class="y1"><p>y1:</p><span id="Y1"> </span></div>
+   <div class="y2"><p>y2:</p><span id="Y2"></span> </span></div>
+  
 </div>
 
    

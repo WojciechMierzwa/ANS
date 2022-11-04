@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <div class="rows">
+            <label>Variables (comma separated)</label>
+            <input type="text" id="vars" value="a,b,c, d">
+        </div>
+        <div class="rows">
+            <label>Expressions (comma separated)</label>
+            <input type="text" id="expression" value="!( a || b || c ), (!a && !b && !c)">
+        </div>
+        <div class="rows">
+            <button id="getResult">Generate truth table</button>
+        </div>
+    </div>
+    
+    <div id="result"></div>
+</body>
+</html>
