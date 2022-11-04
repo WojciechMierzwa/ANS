@@ -7,7 +7,7 @@
     let x4 = Boolean(Number(d));
 
     let x1x2 = (x1 || x2);
-    let y1 = !(x1x2 & x3);
+    let y1 = !(x1x2 && x3);
     let y2 = !(y1 || (!x4))
 
       if(a>1 || a<0)
@@ -28,7 +28,10 @@
       }
       else
       {
-        alert("y1= " +y1 + ", y2 =" +y2);
+        //alert("y1= " +y1 + ", y2 =" +y2);
+        document.getElementById("Y1").innerHTML=Number(y1);
+        document.getElementById("Y2").innerHTML=Number(y2);
+        
         return [y1, y2];
       }
 

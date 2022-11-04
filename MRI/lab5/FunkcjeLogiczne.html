@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheet.css">
     <title>Wojciech Mierzwa 20858</title>
-    <script src="s.js">
-        document.getElementById("Y1").innerHTML=y1;
-        document.getElementById("Y2").innerHTML=y2;
+    <script src="s.js" defer>
+
+        document.getElementById("Y1").innerHTML=y3;
+        document.getElementById("Y2").innerHTML=y4;
     </script>
     
 </head>
@@ -180,9 +181,10 @@
   x1: <input type="number" name="a" id="a" value="0"><br> x2: <input type="number" name="b" id="b" value="0"><br>
   x3: <input type="number" name="c" id="c" value="0"><br> x4: <input type="number" name="d" id="d" value="0"><br><br>
   <button class="button" onclick="logic(document.getElementById('a').value,document.getElementById('b').value,document.getElementById('c').value,document.getElementById('d').value)">Dodaj</button>
+  <p>y1:</p><span id="Y1"> </span>
+  <p>y2:</p><span id="Y2"></span>
 </div>
-<span id="Y1"></span>
-<span id="Y2"></span>
+
    
 </body>
 </html>
