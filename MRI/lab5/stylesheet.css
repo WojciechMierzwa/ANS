@@ -34,12 +34,13 @@ table {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 90%;
+    width: 50%;
   }
   .placer {
     margin-left: 90px;
     margin-right: auto;
     color: #8a0404;
+    display: flex;
   }
   .button {
     background-color: #8a0404;
@@ -50,5 +51,27 @@ table {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    margin-left: 200px;
+  }
+  .area{
+    display: flex;
+  }
+  .x1 {
+    margin-left: 600px;
+  }
+  .x2 {
+    margin-left: 150px;
+  }
+  .x3 {
+    margin-left: 150px;
+  }
+  .x4 {
+    margin-left: 150px;
+  }
+  .y1 {
+    margin-left: 850px;
+  }
+  .y2 {
+    margin-left: 400px;
   }
   
