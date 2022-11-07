@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main()
+int calc()
 {
 	int flag=1;
 	double x,y,z,v,x3, d;
@@ -59,8 +59,7 @@ int main()
 	x3=-x*x*x;
 	d=y/(z-5)+x/(x+y/(y-x3));
 	
-	while(1)
-	{
+	
 		if (z==5)
 		 {
 			printf("\n z-5==0, dzielenie przez 0");
@@ -81,11 +80,29 @@ int main()
 		 	printf("\ndzielenie przez 0");
 			exit(4);
 		 }
-		 break;
 		 
-	}
-	v=1/(y/(z-5)+x/(x+y/(y-x3)));
-	printf("V wynosi %lf", v);
 	
+	v=1/(y/(z-5)+x/(x+y/(y-x3)));
+	printf("V wynosi %lf", v);	
+	int choice;
+	printf("Kontynuowac? Jesli tak wpisz 1, cokolwiek innego konczy program\n");
+	scanf("%d", &choice);
+	if(choice==1)
+	return 1;
+	else
+	{
+		return 0;
+	}
+}
+int main()
+{
+	int choice=1;
+	do
+	{
+		choice=calc();
+		if(choice==0)
+		break;
+	}
+	while(choice);
 	return 0;
 }
