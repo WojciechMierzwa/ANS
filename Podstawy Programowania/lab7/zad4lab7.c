@@ -1,5 +1,5 @@
 #include <stdio.h>
-// 6, 28, 296, 8128
+// 6, 28, 496, 8128
 int main()
 {
 	int i,div=0,number;

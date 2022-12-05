@@ -1,13 +1,16 @@
 #include <stdio.h>
+#include <math.h>
 
 int main()
 {
-	int reps, number, sum=0, i;
+	int reps, sum=0, multiplier=9, i, j;
 	scanf("%d", &reps);
-	for(i=0; i<reps; i++)
+	i=0;
+	while(i<=reps)
 	{
-		scanf("%d", &number);
-		sum=sum+number;
+		sum=j*multiplier+sum;
+		j=pow(10,i);
+		i++;
 	}
 	
 	printf("%d", sum);
