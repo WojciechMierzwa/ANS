@@ -12,10 +12,14 @@ int main()
 	{
 		printf(" 1/%d +", i);
 		sumn=sumn+i;
+		sum=sum+1./i;
+		if(i==n-1)
+		sum=sum+1./(i+1);
 	}
 	printf(" 1/%d\n", n);
 	sumn=sumn+i;
-	printf("Suma n skladnikow: %d", sumn);
+	printf("Suma n skladnikow: %d\n", sumn);
+	printf("Suma: %lf", sum);
 	
 	return 0;
 }
