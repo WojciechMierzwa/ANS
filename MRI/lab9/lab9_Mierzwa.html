@@ -1,0 +1,53 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script>
+
+      function createTable(tableData) {
+        var table = document.createElement('table');
+
+        for (var i = 0; i < tableData.length; i++) {
+          var row = document.createElement('tr');
+          for (var j = 0; j < tableData[i].length; j++) {
+            var cell = document.createElement('td');
+            cell.appendChild(document.createTextNode(tableData[i][j]));
+            row.appendChild(cell);
+          }
+          table.appendChild(row);
+        }
+
+        return table;
+      }
+
+      // Przukładowe tablice
+      var tableData = [
+        ['Imię', 'Nazwisko', 'Wiek'],
+        ['Wojciech', 'Mierzwa', '23'],
+        ['Anna', 'Nowak', '25'],
+        ['Piotr', 'Wiśniewski', '40']
+      ];
+
+      var table2Data = [        ['Kraj', 'Stolica', 'Populacja'],
+        ['Polska', 'Warszawa', '38 milionów'],
+        ['Niemcy', 'Berlin', '83 miliony'],
+        ['Czechy', 'Praga', '10 milionów']
+      ];
+
+      var table3Data = [        ['Nazwa produktu', 'Cena'],
+        ['Mleko', '3 zł'],
+        ['Chleb', '4 zł'],
+        ['Jajka', '7 zł']
+      ];
+
+      // Wyświetl tabelę po załadowaniu strony
+      window.addEventListener('load', function() {
+        document.body.appendChild(createTable(tableData));
+        document.body.appendChild(createTable(table2Data));
+        document.body.appendChild(createTable(table3Data));
+      });
+    </script>
+  </head>
+  <body>
+    <header>Laboratorium 9 - Wojciech Mierzwa</header>
+  </body>
+</html>
