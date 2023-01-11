@@ -19,6 +19,7 @@ let text="";
   var sum = document.getElementById("sum");
   var textarea = document.getElementById("textarea");
   
+ 
 
   zero.addEventListener("click", function() {
     textarea.value += "0";
@@ -38,7 +39,17 @@ let text="";
   DEL.addEventListener("click", function() {
     textarea.value = textarea.value.substring(0, textarea.value.length - 1);
   });
-  var xd = "+";
+
+  
+  textarea.onkeypress = function(e) {
+    const allowedChars = /[01+-]/;
+    const key = String.fromCharCode(!e.charCode ? e.which : e.charCode);
+    if (!allowedChars.test(key)) {
+      e.preventDefault();
+      return false;
+    }
+  }
+
   sum.addEventListener("click", function() {
     
     var myString = textarea.value;
